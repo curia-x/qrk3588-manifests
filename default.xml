@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+  <notice>Manifest file for QRK3588 project.</notice>
+  <remote name="qrk3588" fetch="https://github.com/curia-x/" />
+  <default sync-j="4" sync-s="true" />
+  <project name="qrk3588-arm-trusted-firmware.git" path="arm-trusted-firmware" remote="qrk3588" revision="qrk3588" groups="sources" />
+  <project name="qrk3588-u-boot.git" path="u-boot" remote="qrk3588" revision="qrk3588" groups="sources" />
+  <project name="qrk3588-linux.git" path="linux" remote="qrk3588" revision="qrk3588" groups="sources" />
+  <project name="qrk3588-buildroot.git" path="buildroot" remote="qrk3588" revision="qrk3588" groups="sources" />
+  <project name="qrk3588-build.git" path="build" remote="qrk3588" revision="qrk3588" groups="sources">
+    <linkfile src="build.sh" dest="build.sh" />
+  </project>
+  <project name="qrk3588-apps.git" path="apps" remote="qrk3588" revision="qrk3588" groups="sources" />
+</manifest>
